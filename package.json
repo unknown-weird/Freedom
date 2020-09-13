@@ -1,0 +1,22 @@
+{
+  "name": "freedom-log",
+  "version": "1.0.0",
+  "description": "Logs on server Freedom Inc.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "MrVaDiM4iK",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "11.6.2",
+    "fs": "^0.0.2",
+    "moment": "^2.24.0",
+    "ms-advanced": "",
+    "enmap": "",
+    "better-sqlite3": ""
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}

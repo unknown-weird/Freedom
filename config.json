@@ -1,0 +1,29 @@
+{
+  "version": "1.11.506",
+  "name": "Freedom Bot",
+  "description":"Приватный бот для серверов Freedom Inc.",
+  "owners":"",
+  "start": "2019",
+  "fc": "<:FreedomCoin:671734965645475840>",
+  "year": "2020",
+  "emojis": {
+    "succ": "<a:succ:670242818920284180>",
+    "error": "<a:error:670242853208850433>"
+  }, 
+  "ch": {
+    "info": "548915134223876098",
+    "rao": "550002982977142784",
+    "announcements": "585540287489900574",
+    "bots": "617317809763909684",
+    "chat": "548899664544399389",
+    "shitpost": "556453541179293696",
+    "memes": "549218016215433216",
+    "codes": "626386320268460072",
+    "yourbot": "614378824746139667"
+  },
+  "komunre_site": "http://runfon.tk:8080/",
+  "invites": {
+    "ficc": "https://discord.gg/8gh85QT",
+    "fi": "https://discord.gg/S8gkmtg"
+  }
+}

@@ -1,0 +1,17 @@
+const Discord = require("discord.js");
+module.exports.run = async (client, message, args, error, succ, Users, Guilds) => {
+let timeout2 = require('../functions/timeout.js').timeout
+let embed = new Discord.RichEmbed()
+.setTitle(`Список таймеров`)
+.setColor('BLURPLE')
+.setTimestamp()
+.setAuthor(message.author.username, message.author.avatarURL)
+if(Users.get(message.author.id, 'info.dailys') === []) embed.setDescription(`Таймеров нет.`)
+Users.map(m=>embed.addField(`${Mutes.get(m.id, 'info.tag')} (${Mutes.get(m.id, 'id')}) - **${Mutes.get(m.id, 'info.rule')}**`, `Осталось времени: **${timeout2(`${Mutes.get(m.id, 'info.mute_time')}`, client, message)}**\nМодератор: **${Mutes.get(m.id, 'moderator.tag')}** (**${Mutes.get(m.id, 'moderator.id')}**)`))
+message.channel.send(embed)
+}
+exports.help = {
+    name: ['dailies', 'dailys'],
+    d: 'Показать список замученных.',
+    u: 'dailies'
+}

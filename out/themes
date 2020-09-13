@@ -1,0 +1,27 @@
+let Discord = require('discord.js')
+exports.run = async (client, message, args, error, succ, Users, Guilds, timer) => {
+    let listembed = new Discord.RichEmbed()
+    .setTitle(`Список тем:`)
+    .setDescription(`Здесь находится список тем, которые Вы купили. Они устанавливаются в Ваш профиль, паспорт и баланс. Но есть один минус: Некоторые темы могут быть доступны для некоторых команд. Примеры тем:
+  Тема №1
+  [Пример 1] | [Пример 2] | [Пример 3]
+  Команды: -balance, -profile, -passport
+  Установить: -profile set 1
+  ------------------------------------------------------------------`)
+  .setColor('BLURPLE')
+  .setFooter(`Убрать тему можно командой -profile remove.`)
+  .setTimestamp()
+  .setAuthor(`Freedom v${require('../config.json').version}`)
+ // Users.get(message.author.id, 'info.themes.list').map(r => listembed.addField(`Тема №1`, `
+ // [] | []
+ // Команды: -balance, -profile`)
+ile`)
+  if(!args[0]) return message.channel.send(listembed)
+if(args[0] ? args[0].toLowerCase() : args[0] === 'set'){
+  }
+}
+exports.help = {
+    name: ["themes", "theme"],
+    d: "Устанавливает тему для некоторых команд.",
+    u: "theme set 1"
+}
