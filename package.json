@@ -12,11 +12,11 @@
     "discord.js": "11.6.2",
     "fs": "^0.0.2",
     "moment": "^2.24.0",
-    "ms-advanced": "",
-    "enmap": "",
-    "better-sqlite3": ""
+    "ms-advanced": "1.0.1",
+    "enmap": "5.7.1,
+    "better-sqlite3": "7.1.0"
   },
   "engines": {
-    "node": "10.x"
+    "node": "12.x"
   }
 }
