@@ -55,4 +55,4 @@ client.on('message', async message => {
       if(commandfile) commandfile.run(client, message, args, error, succ, Users, Guilds, timer, randomize);
       if(message.content.indexOf(prefix) !== 0) return;
 });
-client.login(process.env.BOT_TOKEN).then(() => delete process.env.PROJECT_INVITE_TOKEN).then(() => delete process.env.BOT_TOKEN)
+client.login("ваш токен")
